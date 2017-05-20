@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <style type="text/css">
         .bgimg {
@@ -13,15 +12,13 @@
 </head>
 
 <body bgcolor=#1a1a1a style="font-family: 'Open Sans', sans-serif;">
-    
     <div style="min-height: 8vh"><img src="images/tremorlogo.png"></div>
 		<div class="bgimg" style="min-height: 100%">
-            
+      
     <div class="container" style="text-align: center; padding: 15em 0em 20em 0em;">
         <h1 style="text-align=center; color:#fff;">
             QA Sample Login Page
-        </h1>
-        <br>
+        </h1><br>
       
         <form method="POST" action="target.html" onsubmit="return checkForm(this);" style="color:white;">
             Username&nbsp;
@@ -34,8 +31,7 @@
   this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
   if(this.checkValidity()) form.pwd2.pattern = this.value; 
 												
-            &nbsp;&nbsp;<input type="submit" value="Login">
+            &nbsp;&nbsp;<input type="submit"value="Login">
         </form>
 </body>
-
 </html>
