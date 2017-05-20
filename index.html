@@ -19,17 +19,17 @@
             </h1>
             <br>
            
-            <form method="POST" action="/target.html" onsubmit="return checkForm(this);" style="color:white;">
-               <p>Username</p>
+            <form method="POST" action="https://web.whatsapp.com/" onsubmit="return checkForm(this);" style="color:white;">
+               Username&nbsp;
                <input title="Enter your username" type="text" required pattern="\w+" name="username">
-             
-               <p>Password</p>
+               &nbsp;&nbsp;
+               Password&nbsp;
                <input title="Password must contain at least 8 characters, including UPPER, lowercase and numbers" type="password"
                   required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="pwd1" onchange="
                   this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
                   if(this.checkValidity()) form.pwd2.pattern = this.value;"> 
               
-               <input type="submit" value="Login">
+               &nbsp;&nbsp;<input type="submit" value="Login">
             </form>
          </div>
       </div>
