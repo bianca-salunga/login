@@ -18,18 +18,18 @@
                QA Sample Login Page
             </h1>
             <br>
-            <!--- Login Form --->
+           
             <form method="POST" action="target.html" onsubmit="return checkForm(this);" style="color:white;">
                Username&nbsp;
                <input title="Enter your username" type="text" required pattern="\w+" name="username">
                &nbsp;&nbsp;&nbsp;
-               <!--- Password --->
+             
                Password&nbsp;
                <input title="Password must contain at least 8 characters, including UPPER, lowercase and numbers" type="password"
                   required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="pwd1" onchange="
                   this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
                   if(this.checkValidity()) form.pwd2.pattern = this.value;"> 
-               <!--- Login Button --->
+              
                &nbsp;&nbsp;<input type="submit" value="Login">
             </form>
          </div>
